@@ -1,0 +1,35 @@
+.gradient-color-zahran {
+  background: linear-gradient(
+    to right,
+    #6366f1,
+    #3b82f6
+  ); /* from-indigo-500 to-blue-500 */
+  border-radius: 1rem;
+}
+
+.animated-gradient {
+  font-weight: bold; /* font-bold */
+  font-size: 2.25rem; /* text-4xl */
+  padding-bottom: 1rem; /* pb-4 */
+  color: transparent; /* text-transparent */
+  background: linear-gradient(
+    to right,
+    #235d97,
+    #18c5ff,
+    #38bdf8,
+    #fde68a,
+    #bf3c00,
+    #fdd6bc,
+    #0b527c
+  ); /* bg-[linear-gradient(to_right,theme(colors.green.300),theme(colors.green.100),theme(colors.sky.400),theme(colors.yellow.200),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.300))] */
+  background-size: 200% auto; /* bg-[length:200%_auto] */
+  animation: gradient 8s linear infinite; /* animate-gradient */
+}
+
+@keyframes gradient {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  
